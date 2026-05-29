@@ -1,8 +1,8 @@
-```python id="1w0m2k"
+
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-BOT_TOKEN = "YOUR_BOT_TOKEN"
+BOT_TOKEN = "8608490160:AAEf7Z1GMJw8zv1wb06QDUmTqPtdVXYtvUg"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -10,7 +10,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [
             InlineKeyboardButton(
                 "🎮 Open Game Studio",
-                web_app=WebAppInfo(url="https://yourusername.github.io/gamebot/")
+                web_app=WebAppInfo(url="https://aashishchanglani4-star.github.io/gamebot/")
             )
         ]
     ]
@@ -28,4 +28,3 @@ app.add_handler(CommandHandler("start", start))
 
 print("Bot running...")
 app.run_polling()
-```
